@@ -1,0 +1,20 @@
+#navbar{
+   
+        display: flex;
+        justify-content: space-around;
+        font-size: 40px;
+        background-color:aqua;
+        width: 80%;
+        margin: auto;
+   
+}
+.cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(4,auto); */
+    gap: 20px;
+    /* border: 1px solid red; */
+   margin: auto;
+   width: 80%;
+}
+

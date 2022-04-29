@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <div id="navbar" >
+        <div><a href="login.html">Log in</a></div>
+        <div><a href="mens.html">Mens Page</a></div>
+        <div><a href="womens.html">Womens Page</a></div>
+    </div>
+    <h1>Mens Page</h1>
+    <div class="cont">
+        
+    </div>
+</body>
+</html>
+<script>
+    var mensobj=JSON.parse(localStorage.getItem("mens"))
+    // console.log(mensobj);
+
+     mensobj.forEach(function(elem){
+        var box=document.createElement("div")
+
+        var img1=document.createElement("img")
+        img1.setAttribute("src",elem.image_url)
+
+        var p1=document.createElement("p")
+        p1.innerText=elem.name;
+
+        var p2=document.createElement("p")
+        p2.innerText=elem.price;
+
+        var p3=document.createElement("p")
+        p3.innerText=elem.strikedoffprice;
+
+        var but=document.createElement("button")
+        but.innerText="Add to cart";
+
+
+       box.append(img1,p1,p2,p3,but)
+        document.querySelector(".cont").append(box);
+
+     });
+   
+
+</script>
