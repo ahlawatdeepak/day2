@@ -14,15 +14,15 @@
         <div><a href="womens.html">Womens Page</a></div>
     </div>
     <h1>Mens Page</h1>
-    <div class="cont">
+    <div id="contio">
         
     </div>
 </body>
 </html>
 <script>
     var mensobj=JSON.parse(localStorage.getItem("mens"))
-    // console.log(mensobj);
-
+   
+      
      mensobj.forEach(function(elem){
         var box=document.createElement("div")
 
@@ -43,8 +43,8 @@
 
 
        box.append(img1,p1,p2,p3,but)
-        document.querySelector(".cont").append(box);
-
+      document.querySelector("#contio").append(box);
+       
      });
    
 

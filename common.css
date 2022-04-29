@@ -8,7 +8,7 @@
         margin: auto;
    
 }
-.cont{
+#cont{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     /* grid-template-rows: repeat(4,auto); */
@@ -16,5 +16,15 @@
     /* border: 1px solid red; */
    margin: auto;
    width: 80%;
+}
+#contio{
+        display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(4,auto); */
+    gap: 20px;
+    /* border: 1px solid red; */
+   margin: auto;
+   width: 80%;
+
 }
 
